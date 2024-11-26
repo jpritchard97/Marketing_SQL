@@ -20,9 +20,12 @@ The dataset consists of the following columns:
 ## Queries
 ### 1. Click-Through Rate (CTR) for the "google_wide" campaign on February 1, 2021
 SELECT campaign_name, c_date, (clicks/impressions) AS CTR
+
 FROM marketing
+
 WHERE campaign_name = 'google_wide'
   AND c_date = '2021-02-01';
+
 CTR = 0.0081 (click-through rate for the specified campaign on the given date).
 
 ### 2. Conversion Rate (Conversion 1) for the "instagram_tier2" campaign on February 5, 2021
